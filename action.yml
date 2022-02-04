@@ -1,0 +1,18 @@
+name: 'Check docker official version'
+description: 'Check that the version in the official docker image is in sync with product version.'
+inputs:
+  version:
+    description: 'Product version'
+    required: true
+  dockerfile:
+    description: 'Location of official dockerfile in product repo'
+    required: false
+    default: '.release/docker/dockerfile'
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/check-docker-version.sh
+      shell: bash
+      env:
+        VERSION: ${{ inputs.version }}
+        DOCKERFILE: ${{ inputs.dockerfile }}
