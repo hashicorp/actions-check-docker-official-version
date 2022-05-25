@@ -1,5 +1,4 @@
 #! /usr/bin/env bash
-set -eux
 
 match="$(grep "=${VERSION}" "${DOCKERFILE}")"
 echo "$match"
