@@ -7,7 +7,7 @@ inputs:
   dockerfile:
     description: 'Location of official dockerfile in product repo'
     required: false
-    default: 'Dockerfile'
+    default: '.release/docker/Dockerfile.official'
 runs:
   using: "composite"
   steps:
