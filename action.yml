@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 name: 'Check docker official version'
 description: 'Check that the version in the official docker image is in sync with product version.'
 inputs:
