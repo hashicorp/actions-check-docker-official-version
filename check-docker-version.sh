@@ -1,4 +1,6 @@
 #! /usr/bin/env bash
+# Copyright IBM Corp. 2022, 2026
+
 
 match="$(grep "=${VERSION}" "${DOCKERFILE}")"
 echo "$match"
